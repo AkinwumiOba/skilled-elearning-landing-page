@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    /* display: grid; */
+    /* place-items: center; */
+    font-family: "Reddit Sans", sans-serif;
+  }
+
+  .wrapper{
+    width: 450px;
+    padding-top: 15px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+    padding-bottom: 50px;
+  }
+
+  .logo{
+    width: 90px;
+    height: 25px;
+    margin-top: 13px;
+  }
+
+  h1{
+    padding: 10px;
+    font-size: 50px;
+    margin-inline: 20px;
+    margin-bottom: 20px;
+    color: rgb(11, 11, 78);
+  }
+
+  p{
+    line-height: 35px;
+    margin-block: 20px;
+    color: grey;
+    font-size: 20px;
+  }
+
+  .t1{
+    padding: 10px;
+    margin-inline: 20px;
+  }
+
+  .tpic, .dpic{
+    display: none;
+  }
+
+  h2{
+    color: white;
+    background-image: linear-gradient(rgba(255, 166, 0, 0.47), rgb(231, 58, 127));
+    padding: 40px;
+    margin: 20px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+  }
+
+  .boxes{
+    /* margin-top: -30px; */
+    padding-bottom: 50px;
+    background-image:linear-gradient(rgb(255, 255, 255), rgb(240, 240, 240)) ;
+  }
+
+  .ani{
+    background-color: white;
+    margin-inline: 20px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .icon{
+    margin-left: 20px;
+    margin-top: -60px;
+  }
+
+  h3{
+    color: rgb(11, 11, 78);
+    font-size: 30px;
+  }
+
+  footer{
+    background-color: rgb(11, 11, 78);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  button.btop{
+    height: 50px;
+    width: 170px;
+    background-color: rgb(11, 11, 78);
+  }
+
+  .bt{
+    margin-left: 10px;
+    width: 170px;
+    margin-inline: 20px;
+    background-image: linear-gradient(rgba(255, 166, 0, 0.567), rgb(231, 58, 127));  
+  }
+
+
+  .bmid{
+    color: rgb(242, 78, 105);
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 170px;
+    background-color: inherit;  
+  }
+
+  .bmid:hover{
+  color: rgb(111, 49, 108);
+  background-color: inherit;  
+
+  }
+
+  .btop, .bt, .bbut {
+    font-size: 20px;
+    align-items: center;
+    width: 170px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .bbut {
+    width: 200px;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.609), purple);
+  }
+
+  button:hover{
+    background-color: rgba(43, 43, 43, 0.7);
+  }
+
+  @media screen and (min-width: 720px) {
+    .mpic, .dpic{
+      display: none;
+    }
+    .tpic{
+      display: flex;
+      margin-right: -260px;
+      margin-top: -150px;
+      width: 600px;
+      height: 80%;
+    }
+
+    .wrapper{
+      width: 800px;
+      margin-inline: auto;
+      flex-direction: column;
+    }
+
+    .tcov{
+      height: 550px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .ttext{
+      width: 900px;
+      height: 20%;
+      flex-direction: column;
+    }
+
+    .ttext2{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    h1{
+      margin-bottom: 0px;
+    }
+
+    h2{
+      height: 300px;
+      width: 330px;
+      margin-inline: 20px;
+      margin-bottom: 30px;
+      margin-top: 60px;
+    }
+
+    .ani{
+      position: relative;
+      width: 330px;
+      margin-top: 40px;
+      margin-bottom: 2;
+    }
+
+    .boxes{
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .footer{
+      height: 400px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .mpic, .tpic{
+      display: none;
+    }
+
+    .btop{
+      margin-right: 140px;
+    }
+
+    .dpic{
+      display: flex;
+      transform: translate(250px, -250px);
+      width: 900px;
+      height: 800px;
+    }
+
+    .wrapper{
+      width: 1280px;
+    }
+    
+    .ttext{
+      width: 500px;
+    }
+
+    h2, .ani{
+      width: 380px;
+    }
+  }
